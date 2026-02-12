@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:white;
+    overflow:hidden;
+}
+
+/* Sections */
+.section{
+    display:none;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+
+.section.active{
+    display:flex;
+    animation:fadeIn 1s ease;
+}
+
+/* Card */
+.card{
+    width:750px;
+    padding:70px;
+    text-align:center;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 25px 70px rgba(0,0,0,0.08);
+}
+
+/* Titles */
+.small-title{
+    letter-spacing:6px;
+    font-size:13px;
+    margin-bottom:30px;
+    color:#c4002f;
+}
+
+.script-text{
+    font-family:'Allura', cursive;
+    font-size:56px;
+    margin-bottom:30px;
+    color:#c4002f;
+}
+
+.script-text1{
+    font-family:'Allura', cursive;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+/* Text */
+.message{
+    /* font-family:'Playfair Display', serif; */
+    font-size:17px;
+    line-height:2.1;
+    letter-spacing:0.5px;
+    color:#333;
+    margin-bottom:30px;
+    margin-top: 30px;
+}
+
+/* Images */
+.image-box img{
+    width:100%;
+    max-height:400px;
+    object-fit:contain;
+    margin-bottom:30px;
+}
+
+/* Career images */
+.career-gallery{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.career-gallery img{
+    width:45%;
+    max-height:400px;
+    object-fit:contain;
+}
+
+/* Buttons */
+button{
+    padding:14px 35px;
+    border:1px solid #c4002f;
+    background:white;
+    letter-spacing:2px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#c4002f;
+    color:white;
+}
+
+.proposal-buttons{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+}
+
+.yes{
+    border-color:#c4002f;
+}
+
+.no{
+    position:relative;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* SECTION TRANSITION */
+.section {
+    display:none;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+}
+
+.section.active {
+    display:flex;
+    animation:fadeIn 1.2s ease;
+}
+
+/* IMAGE FULL FIT */
+.image-box img {
+    max-width:100%;
+    max-height:400px;
+    object-fit:contain;
+    border-radius:8px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* CAREER GALLERY */
+.career-gallery {
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.career-gallery img {
+    width:250px;
+    object-fit:contain;
+}
+
+/* PROPOSAL BUTTONS */
+.proposal-buttons {
+    margin-top:25px;
+}
+
+.proposal-buttons button {
+    margin:10px;
+}
+
+/* HEART CONFETTI */
+.heart-confetti {
+    position:fixed;
+    top:-10px;
+    font-size:22px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+/* HEART CURSOR */
+body {
+    cursor:url('https://cdn-icons-png.flaticon.com/512/833/833472.png'), auto;
+}
+
+.intro-note1 {
+    font-size:12px;
+    letter-spacing:3px;
+    /* color:#999; */
+    margin-bottom:25px;
+    font-family:'Montserrat', sans-serif;
+}
+
+/* blinking cursor */
+.intro-note1::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
