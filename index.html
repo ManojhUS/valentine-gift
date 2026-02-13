@@ -1,100 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>For Prathyusha ❤️</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@500&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- SECTION 1 -->
-<section class="section active">
-    <div class="card">
-        <h2 class="small-title">HAPPY VALENTINE'S DAY</h2>
-
-        <h1 class="script-text">Prathyusha ❤️</h1>
-        
-
-        <!-- Romantic small intro line -->
-         <p class="intro-note1">
-            <span id="typingText"></span>
-        </p>
-
-        <p class="intro-note message">
-            I was going to write you the perfect Valentine’s message… <br>
-            but then I realized you already are the perfect part of my story.
-        </p>
-
-        <button onclick="nextSection()">Next →</button>
-    </div>
-</section>
-
-
-<!-- SECTION 2 -->
-<section class="section">
-    <div class="card">
-        <h1 class="script-text">How Precious You Are</h1>
-        <p class="message">
-            If loving you were a sport, I’d happily win gold every single day with you.
-        </p>
-        <button onclick="nextSection()">Next →</button>
-    </div>
-</section>
-
-<!-- SECTION 3 Cute Moment -->
-<section class="section">
-    <div class="card">
-        <h1 class="script-text">Our Cute Moment</h1>
-        <div class="image-box">
-            <img src="images/cute.jpg" alt="Cute Moment">
-            <div class="intro-note message">In this little moment, my whole world looked perfect.</div>
-        </div>
-        <button onclick="nextSection()">Next →</button>
-    </div>
-</section>
-
-<!-- SECTION 4 Fun Moment -->
-<section class="section">
-    <div class="card">
-        <h1 class="script-text">Moments I Want To Recreate With You</h1>
-        <div class="image-box">
-            <img src="images/fun.jpg" alt="Fun Moment">
-            <div class="intro-note message">Some moments deserve a replay — not on screen, but in real life with you.</div>
-        </div>
-        <button onclick="nextSection()">Next →</button>
-    </div>
-</section>
-
-<!-- SECTION 5 Career Section -->
-<section class="section">
-    <div class="card">
-        <h1 class="script-text">Our Career Dreams</h1>
-        <div class="career-gallery">
-            <img src="images/mine.jpg" alt="Career 1">
-            <img src="images/her.jpg" alt="Career 2">
-        </div>
-        <div class="intro-note message">One day we’ll look back at these dreams… and smile at how far we came together.</div>
-        <button onclick="nextSection()">Next →</button>
-    </div>
-</section>
-
-<!-- SECTION 6 Proposal -->
-<section class="section">
-    <div class="card">
-        <p class="message">With you, I have found the place where my heart truly belongs.</p>
-        <h1 class="script-text">Will You Be My Valentine?</h1>
-
-        <div class="proposal-buttons">
-            <button class="yes" onclick="sayYes()">YES ❤️</button>
-            <button class="no" id="noBtn">NO 😈</button>
-        </div>
-    </div>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
+   <head>
+      <meta charset="UTF-8">
+      <title>For Prathyusha ❤️</title>
+      <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@500&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <!-- SECTION 1 -->
+      <section class="section active">
+         <div class="card">
+            <h2 class="small-title">HAPPY VALENTINE'S DAY</h2>
+            <h1 class="script-text">Prathyusha ❤️</h1>
+            <p class="intro-note1">
+               <span id="typingText"></span>
+            </p>
+            <button onclick="nextSection()">Unlock ❤️</button>
+         </div>
+      </section>
+      <!-- SECTION 2 -->
+      <section class="section">
+         <div class="card">
+            <h1 class="script-text">My Love</h1>
+            <p class="message">
+               I wanted to write something perfect for Valentine’s Day,
+               but how do I write about perfection… 
+               when it’s already standing in my life as you?
+            </p>
+            <button onclick="nextSection()">See Us</button>
+         </div>
+      </section>
+      <!-- PHOTO STORY SECTION A-->
+      <section class="section story-page">
+         <div class="photo-card">
+            <div class="story-container">
+               <h1 class="script-text">Designed by Destiny, Tailored by Love</h1>
+               <div class="story-block">
+                  <div class="story-row">
+                     <img src="images/cute.jpg" class="story-img">
+                     <div class="story-text">
+                        Just look at us — perfectly imperfect and happily stitched together.
+                        Who needs Romeo & Juliet… when there’s Manojh ❤️ Prathyusha?
+                        The cutest love story in progress....
+                     </div>
+                  </div>
+               </div>
+               <div class="story-row reverse">
+                  <img src="images/fun.jpg" class="story-img">
+                  <div class="story-text">
+                     Not a ready-made love story… we’re tailor-made.
+                     We adjust, fix, laugh, and grow — together every day.
+                     And that’s what makes us forever.
+                  </div>
+               </div>
+               <div class="story-row">
+                  <img src="images/career.jpg" class="story-img">
+                  <div class="story-text">
+                     You chase your stars, I chase mine,<br>
+                     but our sky is the same.<br>
+                     One day, we’ll look back and smile: “We made it together.”
+                  </div>
+               </div>
+               <button onclick="nextSection()">Keep Going</button>
+            </div>
+         </div>
+      </section>
+      <!-- PHOTO STORY SECTION B-->
+      <section class="section story-page">
+         <div class="photo-card">
+            <div class="story-container">
+               <h1 class="script-text">Most Precious ‘Us’ Moments</h1>
+               <div class="story-block">
+                  <div class="story-row">
+                     <img src="images/First.jpg" class="story-img">
+                     <div class="story-text">
+                        Five years of knowing… one moment of finally being - one first picture.<br>
+                        This picture doesn’t just capture us — it whispers,<br>
+                        <b>“We made it… and we will keep making it.”</b>
+                     </div>
+                  </div>
+                  <div class="story-row reverse">
+                     <img src="images/recent.jpg" class="story-img">
+                     <div class="story-text">
+                        Right after you told your parents about us,
+                        You were scared, I was scared… but we still smiled. 
+                        Because in that moment, we both knew — <b>No matter what happens, we choose each other. 
+                        Always.</b>
+                     </div>
+                  </div>
+               </div>
+               <button onclick="nextSection()">Almost There</button>
+            </div>
+         </div>
+      </section>
+      <!-- PROPOSAL -->
+      <section class="section">
+         <div class="card">
+            <p class="message">
+               I chose you in the unknown,
+               I choose you in every moment now,
+               And for the rest of my life, I’ll keep choosing you.
+            </p>
+            <h1 class="script-text">Will You Be My Valentine?</h1>
+            <div class="proposal-buttons">
+               <button class="yes" onclick="nextSection()">YES ❤️</button>
+               <button class="no" id="noBtn">NO 😈</button>
+            </div>
+         </div>
+      </section>
+      <!-- YES SUCCESS SECTION -->
+      <section class="section yes-section">
+         <div class="card yes-card">
+            <h1 class="script-text1">She Said YES</h1>
+            <p class="message">
+               You just made a man the happiest in this world ❤️
+            </p>
+            <button onclick="restartLove()">Replay Love</button>
+         </div>
+         <!-- FLOATING HEARTS (ONLY HERE) -->
+         <div class="hearts">
+            <span>❤️</span>
+            <span>💖</span>
+            <span>💕</span>
+            <span>💘</span>
+            <span>❤️</span>
+            <span>💝</span>
+            <span>💓</span>
+         </div>
+      </section>
+      <script src="script.js"></script>
+   </body>
