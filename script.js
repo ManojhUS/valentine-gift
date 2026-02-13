@@ -15,11 +15,7 @@ document.body.addEventListener("click", () => {
     document.getElementById("bgMusic").play();
 }, { once: true });
 
-/* YES BUTTON */
-function sayYes() {
-    createHearts();
-    alert("You just made a man the happiest ❤️");
-}
+
 
 /* RUNNING NO BUTTON */
 let noBtn = document.getElementById("noBtn");
@@ -59,3 +55,39 @@ function typeWriter() {
 }
 
 window.onload = typeWriter;
+
+ /* FADE IN STORY ROWS ON SCROLL */
+const rows = document.querySelectorAll(".story-row");
+
+window.addEventListener("scroll", () => {
+    rows.forEach(row => {
+        const top = row.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            row.classList.add("show");
+        }
+    });
+});
+
+function sayYes(){
+  const sections = document.querySelectorAll(".section");
+  sections.forEach(s => s.classList.remove("active"));
+
+  document.querySelector(".yes-section").classList.add("active");
+}
+
+function restartLove(){
+  location.reload();
+}
+
+
+// /* YES BUTTON */
+// function sayYes() {
+//     createHearts();
+//     alert("You just made a man the happiest ❤️");
+// }
+
+function closePopup(){
+  document.getElementById("lovePopup").classList.remove("show");
+}
+
+
